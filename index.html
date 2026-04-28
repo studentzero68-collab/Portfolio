@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mukelani | Portfolio</title>
+    <title>Mukelani | Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,41 +21,53 @@
 
 <!-- HERO -->
 <section class="hero">
-    <h2>Hi, I'm Mukelani</h2>
-    <p>Full-Stack Web Developer</p>
-    <a href="#projects" class="btn">View My Work</a>
+    <div class="hero-content">
+        <h2>Hi, I'm Mukelani</h2>
+        <p>Aspiring Full-Stack Web Developer</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="your-image.jpg" alt="Mukelani">
+    </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-        I am a Full-Stack Web Developer skilled in HTML, CSS, and JavaScript. 
-        I build responsive and user-friendly web interfaces, focusing on clean design 
-        and practical solutions. I value integrity, honesty, and strong communication.
+        I am an aspiring Full-Stack Web Developer focused on building clean, responsive, 
+        and user-friendly web experiences. I value discipline, consistency, and continuous growth.
     </p>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section">
+<section id="projects" class="section dark">
     <h2>Projects</h2>
 
     <div class="projects-container">
 
-        <!-- YOUR TESLA PROJECT -->
+        <!-- PROJECT WITH SLIDER -->
         <div class="project-card">
-            <img src="hero.jpg" alt="Tesla Project">
+
+            <div class="slider">
+                <img src="project1.jpg" class="slide active">
+                <img src="project2.jpg" class="slide">
+                <img src="project3.jpg" class="slide">
+            </div>
+
             <div class="project-info">
                 <h3>Tesla UI Clone</h3>
-                <p>Responsive Tesla-inspired website with modern UI and layout.</p>
+                <p>Responsive Tesla-inspired website with modern UI design.</p>
                 <a href="https://mukelaniproject.netlify.app" target="_blank">View Project</a>
             </div>
+
         </div>
 
-        <!-- ADD MORE PROJECTS -->
+        <!-- SECOND PROJECT -->
         <div class="project-card">
             <h3>Search UI</h3>
-            <p>Clean search bar design with responsive layout.</p>
+            <p>Clean and responsive search interface.</p>
         </div>
 
     </div>
@@ -72,7 +84,7 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
+<section id="contact" class="section dark">
     <h2>Contact</h2>
     <p>Email: studentzero68@gmail.com</p>
 </section>
@@ -80,6 +92,18 @@
 <footer>
     <p>© 2026 Mukelani</p>
 </footer>
+
+<!-- SLIDER SCRIPT -->
+<script>
+const slides = document.querySelectorAll('.slide');
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}, 3000);
+</script>
 
 </body>
 </html>
