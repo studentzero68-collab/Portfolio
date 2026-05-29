@@ -93,6 +93,31 @@ body {
     opacity: 1;
 }
 
+.case-study {
+    background: #1a1a1a;
+    border-left: 4px solid red;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.case-study h4 {
+    color: red;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+}
+
+.case-study p {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.case-study strong {
+    color: white;
+}
+
 
 .skills span {
     background: rgb(111, 7, 209);
