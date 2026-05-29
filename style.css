@@ -23,6 +23,10 @@ body {
     color: rgb(37, 8, 117);
 }
 
+#about {
+    background: #222121;
+}
+
 
 .hero {
     display: flex;
