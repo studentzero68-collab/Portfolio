@@ -769,6 +769,7 @@ body.portfolio-ready footer { animation-delay: 0.6s; }
     margin-bottom: 8px;
     font-size: 0.9rem;
     color: var(--text);
+    
 }
 
 .breakdown-percent {
