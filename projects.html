@@ -47,7 +47,7 @@
             <article class="project-card detail-card">
                 <h3>Tesla UI Clone</h3>
                 <div class="slider">
-                    <img src="./images/images (1).jpg" class="slide active" alt="Tesla project preview">
+                    <img src="./images/images (3).jpg" class="slide active" alt="Tesla project preview">
                     <img src="./images/images.jpg" class="slide" alt="Tesla project preview 2">
                     <img src="./images/images (2).jpg" class="slide" alt="Tesla project preview 3">
                 </div>
@@ -58,9 +58,16 @@
                 </div>
                 <p>A polished Tesla-inspired landing page focused on modern layout design and visual storytelling.</p>
                 <div class="case-study">
-                    <h4>What I learned</h4>
-                    <p><strong>Challenge:</strong> Recreating a premium brand feel with CSS alone.</p>
-                    <p><strong>Outcome:</strong> Stronger eye for spacing, typography hierarchy, and hero sections.</p>
+                    <button type="button" class="case-study-toggle" aria-expanded="false">
+                        <span class="case-study-toggle-label">View case study</span>
+                        <span class="case-study-toggle-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="case-study-content">
+                        <h4>What I learned</h4>
+                        <p><strong>Challenge:</strong> Recreating a premium brand feel with CSS alone — matching Tesla's clean typography, full-width imagery, and confident spacing without relying on a framework.</p>
+                        <p><strong>Approach:</strong> I studied the original layout section by section, rebuilt the hero and model cards with flexbox, and tuned font sizes and letter-spacing until the page felt polished on both desktop and mobile.</p>
+                        <p><strong>Outcome:</strong> Stronger eye for spacing, typography hierarchy, and hero sections. This project taught me how small visual details — padding, contrast, and image cropping — define whether a clone feels professional or rough.</p>
+                    </div>
                 </div>
                 <div class="project-links">
                     <a href="https://studentzero68-collab.github.io/Tesla-project-mukelani/" target="_blank" rel="noopener noreferrer" class="btn btn-small">Live Demo</a>
@@ -82,9 +89,16 @@
                 </div>
                 <p>A responsive Netflix-inspired page with strong visual identity and attention to layout and user flow.</p>
                 <div class="case-study">
-                    <h4>What I learned</h4>
-                    <p><strong>Challenge:</strong> Building a dark-themed layout that works across screen sizes.</p>
-                    <p><strong>Outcome:</strong> Improved responsive patterns and image-heavy section design.</p>
+                    <button type="button" class="case-study-toggle" aria-expanded="false">
+                        <span class="case-study-toggle-label">View case study</span>
+                        <span class="case-study-toggle-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="case-study-content">
+                        <h4>What I learned</h4>
+                        <p><strong>Challenge:</strong> Building a dark-themed layout that works across screen sizes while keeping Netflix's bold branding, layered backgrounds, and clear call-to-action hierarchy.</p>
+                        <p><strong>Approach:</strong> I used flexbox for the hero and feature rows, added responsive breakpoints for stacked mobile layouts, and tested contrast so text stayed readable over background images.</p>
+                        <p><strong>Outcome:</strong> Improved responsive patterns and image-heavy section design. I learned how to balance dramatic visuals with usability so the page still guides users toward sign-up actions.</p>
+                    </div>
                 </div>
                 <div class="project-links">
                     <a href="https://studentzero68-collab.github.io/Netflix/" target="_blank" rel="noopener noreferrer" class="btn btn-small">Live Demo</a>
@@ -108,9 +122,16 @@
                 </div>
                 <p>A functional productivity app with filters, task states, and local persistence for everyday usability.</p>
                 <div class="case-study">
-                    <h4>What I learned</h4>
-                    <p><strong>Challenge:</strong> Managing task state and persisting data without a backend.</p>
-                    <p><strong>Outcome:</strong> First project where I handled data flow and DOM updates confidently.</p>
+                    <button type="button" class="case-study-toggle" aria-expanded="false">
+                        <span class="case-study-toggle-label">View case study</span>
+                        <span class="case-study-toggle-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="case-study-content">
+                        <h4>What I learned</h4>
+                        <p><strong>Challenge:</strong> Managing task state and persisting data without a backend — users needed to add, complete, filter, and delete tasks while keeping everything saved between visits.</p>
+                        <p><strong>Approach:</strong> I structured tasks as objects in an array, wired up DOM event listeners for each action, and synced changes to localStorage so the list restored on page reload.</p>
+                        <p><strong>Outcome:</strong> First project where I handled data flow and DOM updates confidently. It showed me how front-end apps can feel complete even before working with a server or database.</p>
+                    </div>
                 </div>
                 <div class="project-links">
                     <a href="https://studentzero68-collab.github.io/To-do-list/" target="_blank" rel="noopener noreferrer" class="btn btn-small">Live Demo</a>
@@ -133,9 +154,16 @@
                 </div>
                 <p>A dynamic clone that pushed me to work with APIs, video content, and interactive components.</p>
                 <div class="case-study">
-                    <h4>What I learned</h4>
-                    <p><strong>Challenge:</strong> Fetching and displaying external data reliably.</p>
-                    <p><strong>Outcome:</strong> Built my first API-driven interface and async JavaScript workflow.</p>
+                    <button type="button" class="case-study-toggle" aria-expanded="false">
+                        <span class="case-study-toggle-label">View case study</span>
+                        <span class="case-study-toggle-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="case-study-content">
+                        <h4>What I learned</h4>
+                        <p><strong>Challenge:</strong> Fetching and displaying external data reliably — handling loading states, empty results, and rendering video thumbnails dynamically from an API.</p>
+                        <p><strong>Approach:</strong> I used async/await with fetch, mapped API responses into reusable card components, and added basic error handling so the UI stayed usable when requests failed.</p>
+                        <p><strong>Outcome:</strong> Built my first API-driven interface and async JavaScript workflow. This project pushed me past static pages and into building interfaces that respond to live data.</p>
+                    </div>
                 </div>
                 <div class="project-links">
                     <a href="https://studentzero68-collab.github.io/Youtube-basic/" target="_blank" rel="noopener noreferrer" class="btn btn-small">Live Demo</a>
@@ -157,9 +185,16 @@
                 </div>
                 <p>A responsive Bakery page with strong visual identity and attention to layout and user flow.</p>
                 <div class="case-study">
-                    <h4>What I learned</h4>
-                    <p><strong>Challenge:</strong> Building a dark-themed layout that works across screen sizes.</p>
-                    <p><strong>Outcome:</strong> Improved responsive patterns and image-heavy section design.</p>
+                    <button type="button" class="case-study-toggle" aria-expanded="false">
+                        <span class="case-study-toggle-label">View case study</span>
+                        <span class="case-study-toggle-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="case-study-content">
+                        <h4>What I learned</h4>
+                        <p><strong>Challenge:</strong> Designing a warm, inviting bakery brand online — balancing product photography, menu sections, and contact details without the page feeling cluttered.</p>
+                        <p><strong>Approach:</strong> I planned the page in clear sections (hero, menu, about, contact), used flexbox for card grids, and picked a colour palette that felt handcrafted and approachable on every screen size.</p>
+                        <p><strong>Outcome:</strong> Improved responsive patterns and image-heavy section design. I learned how layout rhythm and consistent spacing make a small business site feel trustworthy and easy to browse.</p>
+                    </div>
                 </div>
                 <div class="project-links">
                     <a href="https://studentzero68-collab.github.io/Bakery-project1/" target="_blank" rel="noopener noreferrer" class="btn btn-small">Live Demo</a>
@@ -182,9 +217,16 @@
                 </div>
                 <p>A group based project page with strong visual identity and attention to layout and user flow.</p>
                 <div class="case-study">
-                    <h4>What I learned</h4>
-                    <p><strong>Challenge:</strong> Building a reload layout that works across the page for when the quiz is complete.</p>
-                    <p><strong>Outcome:</strong> Improved responsive patterns and image-heavy section design.</p>
+                    <button type="button" class="case-study-toggle" aria-expanded="false">
+                        <span class="case-study-toggle-label">View case study</span>
+                        <span class="case-study-toggle-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="case-study-content">
+                        <h4>What I learned</h4>
+                        <p><strong>Challenge:</strong> Building a reload layout that works across the page for when the quiz is complete — keeping score feedback, retry options, and question flow clear for users.</p>
+                        <p><strong>Approach:</strong> Our group split UI, logic, and styling tasks, then connected question data to JavaScript so answers updated the score in real time and the results screen reset cleanly on retry.</p>
+                        <p><strong>Outcome:</strong> Improved teamwork and interactive UI patterns. I learned how to plan state changes in a widget-style app so the experience stays smooth from first question through final results.</p>
+                    </div>
                 </div>
                 <div class="project-links">
                     <a href="https://kmukendi10.github.io/quiz-widget-project/" target="_blank" rel="noopener noreferrer" class="btn btn-small">Live Demo</a>
@@ -208,9 +250,16 @@
                 </div>
                 <p>A group based project page with strong visual identity and attention to layout and user flow.</p>
                 <div class="case-study">
-                    <h4>What I learned</h4>
-                    <p><strong>Challenge:</strong> Building a layout that shows life and human touch.</p>
-                    <p><strong>Outcome:</strong> Improved responsive patterns and image-heavy section design.</p>
+                    <button type="button" class="case-study-toggle" aria-expanded="false">
+                        <span class="case-study-toggle-label">View case study</span>
+                        <span class="case-study-toggle-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="case-study-content">
+                        <h4>What I learned</h4>
+                        <p><strong>Challenge:</strong> Building a layout that shows life and human touch — presenting an innovation hub prototype that feels community-driven rather than like a generic template.</p>
+                        <p><strong>Approach:</strong> We combined photography, testimonial blocks, and event-style sections, then refined spacing and typography together so each screen felt intentional and welcoming on mobile and desktop.</p>
+                        <p><strong>Outcome:</strong> Improved responsive patterns and collaborative design decisions. This project taught me how group feedback and iteration help a prototype communicate purpose, not just structure.</p>
+                    </div>
                 </div>
                 <div class="project-links">
                     <a href="https://giftmshengu250-pixel.github.io/Ihub-Prototype75/" target="_blank" rel="noopener noreferrer" class="btn btn-small">Live Demo</a>

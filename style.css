@@ -538,11 +538,57 @@ body.portfolio-ready footer { animation-delay: 0.6s; }
 .case-study {
     background: var(--accent-soft);
     border-left: 4px solid var(--accent);
-    padding: 1rem;
+    padding: 0.75rem;
     border-radius: 12px;
     margin: 1rem 0 0;
     font-size: 14px;
     line-height: 1.75;
+}
+
+.case-study-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    padding: 0.55rem 0.75rem;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+    font-family: inherit;
+}
+
+.case-study-toggle:hover {
+    background: rgba(232, 93, 4, 0.08);
+    border-color: rgba(232, 93, 4, 0.35);
+}
+
+.case-study-toggle-icon {
+    flex-shrink: 0;
+    transition: transform 0.35s ease;
+    font-size: 0.65rem;
+}
+
+.case-study.is-open .case-study-toggle-icon {
+    transform: rotate(180deg);
+}
+
+.case-study-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.45s ease, opacity 0.35s ease, margin-top 0.35s ease;
+    margin-top: 0;
+}
+
+.case-study.is-open .case-study-content {
+    opacity: 1;
+    margin-top: 0.75rem;
 }
 
 .case-study h4 {
@@ -554,6 +600,10 @@ body.portfolio-ready footer { animation-delay: 0.6s; }
 .case-study p {
     margin-bottom: 0.55rem;
     color: var(--muted);
+}
+
+.case-study p:last-child {
+    margin-bottom: 0;
 }
 
 .case-study strong {

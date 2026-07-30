@@ -108,9 +108,76 @@ if (skillsSection) {
     skillObserver.observe(skillsSection);
 }
 
+function initCaseStudyToggles() {
+    document.querySelectorAll('.case-study').forEach((caseStudy) => {
+        const toggle = caseStudy.querySelector('.case-study-toggle');
+        const content = caseStudy.querySelector('.case-study-content');
+        const label = caseStudy.querySelector('.case-study-toggle-label');
+        if (!toggle || !content) return;
+
+        toggle.addEventListener('click', () => {
+            const isOpen = caseStudy.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', String(isOpen));
+
+            if (label) {
+                label.textContent = isOpen ? 'Hide case study' : 'View case study';
+            }
+
+            content.style.maxHeight = isOpen ? `${content.scrollHeight}px` : '0px';
+        });
+    });
+}
+
+function initProjectsAutoScroll() {
+    const grid = document.querySelector('.detail-section.projects-grid');
+    if (!grid || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    let paused = false;
+    let resumeTimer = null;
+
+    function pauseAutoScroll() {
+        paused = true;
+        clearTimeout(resumeTimer);
+    }
+
+    function scheduleResume() {
+        clearTimeout(resumeTimer);
+        resumeTimer = setTimeout(() => {
+            paused = false;
+        }, 4000);
+    }
+
+    grid.addEventListener('mouseenter', pauseAutoScroll);
+    grid.addEventListener('mouseleave', scheduleResume);
+    grid.addEventListener('touchstart', pauseAutoScroll, { passive: true });
+    grid.addEventListener('touchend', scheduleResume, { passive: true });
+    grid.addEventListener('wheel', pauseAutoScroll, { passive: true });
+
+    setInterval(() => {
+        if (paused) return;
+
+        const card = grid.querySelector('.project-card');
+        if (!card) return;
+
+        const gap = 28;
+        const scrollStep = card.offsetWidth + gap;
+        const maxScroll = grid.scrollWidth - grid.clientWidth;
+
+        if (maxScroll <= 0) return;
+
+        if (grid.scrollLeft >= maxScroll - 4) {
+            grid.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            grid.scrollBy({ left: scrollStep, behavior: 'smooth' });
+        }
+    }, 4500);
+}
+
 function init() {
     initTheme();
     runIntro();
+    initCaseStudyToggles();
+    initProjectsAutoScroll();
 }
 
 if (document.readyState === 'loading') {
