@@ -964,6 +964,13 @@ body.portfolio-ready footer { animation-delay: 0.6s; }
     border-radius: 18px;
     border: 1px solid var(--border);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(232, 93, 4, 0.35);
+    box-shadow: 0 22px 46px rgba(0, 0, 0, 0.24);
 }
 
 .detail-card h3 {
