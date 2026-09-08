@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Skills and learning progress — HTML, CSS, JavaScript, and tools Mukelani uses to build the web.">
+    <meta name="description" content="Skills and technologies — frontend, backend, and tools Mukelani uses to build the web.">
     <title>Skills | Mukelani</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
@@ -38,105 +38,60 @@
         <section class="page-hero">
             <div class="page-hero-content">
                 <p class="eyebrow">Skills</p>
-                <h2>My learning journey in web development</h2>
-                <p class="page-hero-text">I am strongest in structure and visual design, and I am actively growing my JavaScript and problem-solving confidence through every project I build.</p>
+                <h2>Technologies I work with</h2>
+                <p class="page-hero-text">From interface design to backend logic and the tools that keep projects moving — here's what I reach for when building.</p>
             </div>
         </section>
 
+        <div class="wave-divider" aria-hidden="true">
+            <svg viewBox="0 0 400 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#6d28d9"/>
+                        <stop offset="50%" stop-color="#c026d3"/>
+                        <stop offset="100%" stop-color="#f97316"/>
+                    </linearGradient>
+                </defs>
+                <path d="M0 12 Q25 4 50 12 T100 12 T150 12 T200 12 T250 12 T300 12 T350 12 T400 12" fill="none" stroke="url(#waveGrad)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+
         <section class="detail-section" id="skills">
-            <div class="skills-evaluation">
-                <article class="skill-card">
-                    <div class="skill-card-header">
-                        <div>
-                            <h3>HTML</h3>
-                            <span class="skill-badge skill-badge-strong">Strong</span>
-                        </div>
-                        <span class="skill-overall-percent" data-target="84">0%</span>
+            <div class="skills-categories">
+                <article class="skill-category skill-category-frontend">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">HTML</span>
+                        <span class="skill-pill">CSS</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">React</span>
+                        <span class="skill-pill">Figma</span>
+                        <span class="skill-pill">Canva</span>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill skill-fill-html" data-width="84"></div>
-                    </div>
-                    <p class="skill-note">I am comfortable creating clear structure, semantic layouts and user-friendly page sections.</p>
-                    <ul class="skill-breakdown">
-                        <li>
-                            <div class="breakdown-row"><span>Semantic markup</span><span class="breakdown-percent" data-target="88">0%</span></div>
-                            <div class="skill-bar skill-bar-small"><div class="skill-fill" data-width="88"></div></div>
-                        </li>
-                        <li>
-                            <div class="breakdown-row"><span>Page structure</span><span class="breakdown-percent" data-target="90">0%</span></div>
-                            <div class="skill-bar skill-bar-small"><div class="skill-fill" data-width="90"></div></div>
-                        </li>
-                        <li>
-                            <div class="breakdown-row"><span>Forms &amp; inputs</span><span class="breakdown-percent" data-target="78">0%</span></div>
-                            <div class="skill-bar skill-bar-small"><div class="skill-fill" data-width="78"></div></div>
-                        </li>
-                    </ul>
                 </article>
 
-                <article class="skill-card">
-                    <div class="skill-card-header">
-                        <div>
-                            <h3>CSS</h3>
-                            <span class="skill-badge skill-badge-strong">Strong</span>
-                        </div>
-                        <span class="skill-overall-percent" data-target="81">0%</span>
+                <article class="skill-category">
+                    <h3 class="skill-category-title">Backend</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">Node.js</span>
+                        <span class="skill-pill">MongoDB</span>
+                        <span class="skill-pill">Firebase</span>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill skill-fill-css" data-width="81"></div>
-                    </div>
-                    <p class="skill-note">I enjoy building polished interfaces with responsive layouts, animation and a strong visual identity.</p>
-                    <ul class="skill-breakdown">
-                        <li>
-                            <div class="breakdown-row"><span>Flexbox layouts</span><span class="breakdown-percent" data-target="85">0%</span></div>
-                            <div class="skill-bar skill-bar-small"><div class="skill-fill" data-width="85"></div></div>
-                        </li>
-                        <li>
-                            <div class="breakdown-row"><span>Grid layouts</span><span class="breakdown-percent" data-target="74">0%</span></div>
-                            <div class="skill-bar skill-bar-small"><div class="skill-fill" data-width="74"></div></div>
-                        </li>
-                        <li>
-                            <div class="breakdown-row"><span>Responsive design</span><span class="breakdown-percent" data-target="79">0%</span></div>
-                            <div class="skill-bar skill-bar-small"><div class="skill-fill" data-width="79"></div></div>
-                        </li>
-                    </ul>
                 </article>
 
-                <article class="skill-card">
-                    <div class="skill-card-header">
-                        <div>
-                            <h3>JavaScript</h3>
-                            <span class="skill-badge skill-badge-strong">Strong</span>
-                        </div>
-                        <span class="skill-overall-percent" data-target="75">0%</span>
+                <article class="skill-category">
+                    <h3 class="skill-category-title">Tools &amp; Workflow</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">VS Code</span>
+                        <span class="skill-pill">Cursor</span>
+                        <span class="skill-pill">Kiro</span>
+                        <span class="skill-pill">Claude</span>
+                        <span class="skill-pill">ChatGPT</span>
+                        <span class="skill-pill">ClickUp</span>
+                        <span class="skill-pill">Slack</span>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill skill-fill-js" data-width="75"></div>
-                    </div>
-                    <p class="skill-note">I am building confidence in logic, interactivity and working with APIs while strengthening my debugging skills.</p>
-                    <ul class="skill-breakdown">
-                        <li>
-                            <div class="breakdown-row"><span>DOM manipulation</span><span class="breakdown-percent" data-target="78">0%</span></div>
-                            <div class="skill-bar skill-bar-small"><div class="skill-fill" data-width="78"></div></div>
-                        </li>
-                        <li>
-                            <div class="breakdown-row"><span>Events &amp; interactivity</span><span class="breakdown-percent" data-target="76">0%</span></div>
-                            <div class="skill-bar skill-bar-small"><div class="skill-fill" data-width="76"></div></div>
-                        </li>
-                        <li>
-                            <div class="breakdown-row"><span>APIs &amp; async JS</span><span class="breakdown-percent" data-target="72">0%</span></div>
-                            <div class="skill-bar skill-bar-small"><div class="skill-fill" data-width="72"></div></div>
-                        </li>
-                    </ul>
                 </article>
-            </div>
-
-            <div class="skills-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>GitHub</span>
-                <span>Netlify</span>
-                <span>Responsive Design</span>
             </div>
         </section>
 
