@@ -43,6 +43,22 @@
             </div>
         </section>
 
+        <!-- Wave divider — music motif -->
+        <div aria-hidden="true" style="padding: 8px 0 0;">
+            <svg class="wave-divider" viewBox="0 0 360 24" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                    <linearGradient id="waveGradProj" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%"   stop-color="#6920c8" stop-opacity="0"/>
+                        <stop offset="35%"  stop-color="#8b38dc" stop-opacity="0.9"/>
+                        <stop offset="65%"  stop-color="#b348c8" stop-opacity="0.9"/>
+                        <stop offset="100%" stop-color="#f08020" stop-opacity="0"/>
+                    </linearGradient>
+                </defs>
+                <path d="M0 12 C30 4, 60 20, 90 12 S150 4, 180 12 S240 20, 270 12 S330 4, 360 12"
+                      stroke="url(#waveGradProj)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            </svg>
+        </div>
+
         <section class="detail-section projects-grid">
             <article class="project-card detail-card">
                 <h3>Tesla UI Clone</h3>
@@ -329,6 +345,71 @@
                 <div class="project-links">
                     <a href="https://studentzero68-collab.github.io/Shopping-clone/" target="_blank" rel="noopener noreferrer" class="btn btn-small">Live Demo</a>
                     <a href="https://github.com/studentzero68-collab/Shopping-clone.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-small">Source Code</a>
+                </div>
+            </article>
+
+            <article class="project-card detail-card">
+                <h3>Zero — Capstone Project</h3>
+                <div class="slider">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23110f0d'/%3E%3Crect x='70' y='70' width='1060' height='660' rx='28' fill='%231b1612' stroke='%23e85d04' stroke-width='4'/%3E%3Ctext x='600' y='355' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='56' fill='%23e8e0d4'%3EScreenshot coming soon%3C/text%3E%3Ctext x='600' y='430' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='28' fill='%239a9088'%3EZero — Airbnb-inspired platform%3C/text%3E%3C/svg%3E" class="slide active" alt="Zero capstone project placeholder preview">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23110f0d'/%3E%3Crect x='70' y='70' width='1060' height='660' rx='28' fill='%231b1612' stroke='%23e85d04' stroke-width='4'/%3E%3Ctext x='600' y='355' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='56' fill='%23e8e0d4'%3EScreenshot coming soon%3C/text%3E%3Ctext x='600' y='430' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='28' fill='%239a9088'%3EListings + admin dashboard%3C/text%3E%3C/svg%3E" class="slide" alt="Zero capstone project placeholder preview 2">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23110f0d'/%3E%3Crect x='70' y='70' width='1060' height='660' rx='28' fill='%231b1612' stroke='%23e85d04' stroke-width='4'/%3E%3Ctext x='600' y='355' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='56' fill='%23e8e0d4'%3EScreenshot coming soon%3C/text%3E%3Ctext x='600' y='430' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='28' fill='%239a9088'%3EJWT auth + MongoDB backend%3C/text%3E%3C/svg%3E" class="slide" alt="Zero capstone project placeholder preview 3">
+                </div>
+                <div class="project-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>MongoDB</span>
+                    <span>JWT</span>
+                </div>
+                <p>An Airbnb-inspired full-stack accommodation platform with user authentication, listing management, and an admin dashboard for hosts.</p>
+                <div class="case-study">
+                    <button type="button" class="case-study-toggle" aria-expanded="false">
+                        <span class="case-study-toggle-label">View case study</span>
+                        <span class="case-study-toggle-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="case-study-content">
+                        <h4>What I learned</h4>
+                        <p><strong>Challenge:</strong> Building a complete full-stack product from scratch — I needed secure user authentication, a structured backend that could handle listings and admin actions, and a React frontend that stayed in sync with live server data.</p>
+                        <p><strong>Approach:</strong> I built an Express + MongoDB API with JWT-based auth, defined clear schemas for users and listings, and wired the React client to protected routes and an admin dashboard for managing accommodation entries. Token handling, middleware, and REST endpoints kept the frontend and backend responsibilities separated.</p>
+                        <p><strong>Outcome:</strong> This capstone pushed me from isolated front-end builds into end-to-end development. I gained confidence designing APIs, securing routes, and connecting a React app to a real database — the kind of architecture I will carry into professional full-stack work.</p>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-small">Live Demo — link pending</a>
+                    <a href="#" class="btn btn-outline btn-small">Source Code — link pending</a>
+                </div>
+            </article>
+
+            <article class="project-card detail-card">
+                <h3>Urban Threads</h3>
+                <div class="slider">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23110f0d'/%3E%3Crect x='70' y='70' width='1060' height='660' rx='28' fill='%231b1612' stroke='%23e85d04' stroke-width='4'/%3E%3Ctext x='600' y='355' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='56' fill='%23e8e0d4'%3EScreenshot coming soon%3C/text%3E%3Ctext x='600' y='430' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='28' fill='%239a9088'%3EUrban Threads — streetwear store%3C/text%3E%3C/svg%3E" class="slide active" alt="Urban Threads placeholder preview">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23110f0d'/%3E%3Crect x='70' y='70' width='1060' height='660' rx='28' fill='%231b1612' stroke='%23e85d04' stroke-width='4'/%3E%3Ctext x='600' y='355' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='56' fill='%23e8e0d4'%3EScreenshot coming soon%3C/text%3E%3Ctext x='600' y='430' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='28' fill='%239a9088'%3EProduct filtering + auth flow%3C/text%3E%3C/svg%3E" class="slide" alt="Urban Threads placeholder preview 2">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23110f0d'/%3E%3Crect x='70' y='70' width='1060' height='660' rx='28' fill='%231b1612' stroke='%23e85d04' stroke-width='4'/%3E%3Ctext x='600' y='355' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='56' fill='%23e8e0d4'%3EScreenshot coming soon%3C/text%3E%3Ctext x='600' y='430' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='28' fill='%239a9088'%3ELogin-gated cart + checkout%3C/text%3E%3C/svg%3E" class="slide" alt="Urban Threads placeholder preview 3">
+                </div>
+                <div class="project-tags">
+                    <span>Firebase</span>
+                    <span>Firestore</span>
+                    <span>Authentication</span>
+                    <span>React</span>
+                </div>
+                <p>A streetwear e-commerce app with Firebase Authentication, live Firestore product data, dynamic filtering, and a login-gated shopping cart.</p>
+                <div class="case-study">
+                    <button type="button" class="case-study-toggle" aria-expanded="false">
+                        <span class="case-study-toggle-label">View case study</span>
+                        <span class="case-study-toggle-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="case-study-content">
+                        <h4>What I learned</h4>
+                        <p><strong>Challenge:</strong> Delivering a real-time shopping experience backed by Firebase — products had to load from Firestore, the cart needed to respect logged-in users only, and auth flows like forgot-password and show-password had to feel polished.</p>
+                        <p><strong>Approach:</strong> I connected Firestore for live product data with dynamic category filtering, configured security rules and billing so reads and writes stayed controlled, and built the cart and checkout flow behind Firebase Authentication with clear UI feedback for password visibility and account recovery.</p>
+                        <p><strong>Outcome:</strong> Stronger understanding of backend-as-a-service patterns without a custom server. I learned how Firestore queries, auth state, and security rules work together — and how to design an e-commerce flow that protects user actions while keeping the storefront responsive.</p>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-small">Live Demo — link pending</a>
+                    <a href="#" class="btn btn-outline btn-small">Source Code — link pending</a>
                 </div>
             </article>
         </section>
