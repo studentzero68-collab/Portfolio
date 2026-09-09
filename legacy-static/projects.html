@@ -30,6 +30,7 @@
                     <a href="projects.html" class="nav-link active" aria-current="page">Projects</a>
                     <a href="skills.html" class="nav-link">Skills</a>
                     <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="login.html" class="nav-link auth-link" data-auth-link>Owner login</a>
                 </nav>
                 <button type="button" class="theme-toggle" aria-label="Switch to light mode"></button>
             </div>
@@ -59,6 +60,14 @@
             </svg>
         </div>
 
+        <section class="detail-section projects-grid" id="projects-list" aria-live="polite">
+            <p class="projects-status">Loading projects...</p>
+            <!-- Project cards are loaded from the database by portfolio.js. -->
+        </section>
+        <noscript>
+            <p class="projects-status">JavaScript is required to load the project list.</p>
+        </noscript>
+        <!--
         <section class="detail-section projects-grid">
             <article class="project-card detail-card">
                 <h3>Tesla UI Clone</h3>
@@ -413,6 +422,7 @@
                 </div>
             </article>
         </section>
+        -->
 
         <footer>
             <p>© 2026 Mukelani Nkazimulo Sindana</p>
@@ -425,5 +435,6 @@
     </div>
 
     <script src="port.js"></script>
+    <script src="portfolio.js"></script>
 </body>
 </html>

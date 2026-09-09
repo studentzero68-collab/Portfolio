@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Mukelani</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body class="portfolio-ready">
+    <div class="page-bg" aria-hidden="true"></div><div class="page-bg-overlay" aria-hidden="true"></div>
+    <div class="page-wrapper admin-page">
+        <header class="navbar"><a href="index.html" class="logo">Mukelani</a><div class="navbar-actions"><a href="projects.html" class="nav-link">View portfolio</a><button id="logout-button" class="btn btn-outline btn-small" type="button">Log out</button></div></header>
+        <main class="admin-content">
+            <div class="admin-heading"><div><p class="eyebrow">Owner only</p><h1>Project dashboard</h1></div><p id="admin-status" class="form-status" role="status"></p></div>
+            <form id="project-form" class="project-form">
+                <input type="hidden" id="project-id">
+                <label for="title">Title</label><input id="title" required>
+                <label for="description">Description</label><textarea id="description" rows="3" required></textarea>
+                <label for="image">Project image</label><input id="image" type="file" accept="image/jpeg,image/png,image/webp,image/gif"><div id="image-preview" class="image-preview" aria-live="polite">No image selected</div>
+                <label for="tags">Tags, separated by commas</label><input id="tags" placeholder="HTML, CSS, JavaScript" required>
+                <label for="category">Category (optional)</label><input id="category" placeholder="Web app, UI clone, Full stack">
+                <label for="live-url">Live URL</label><input id="live-url" type="url">
+                <label for="source-url">Source URL</label><input id="source-url" type="url">
+                <label class="checkbox-label"><input id="featured" type="checkbox"> Featured project</label>
+                <label class="checkbox-label"><input id="remove-image" type="checkbox"> Remove current image</label>
+                <div class="project-form-actions"><button class="btn" type="submit">Save project</button><button class="btn btn-outline" id="cancel-edit" type="button">Clear</button></div>
+            </form>
+            <section><h2>Published projects</h2><div id="admin-projects" class="admin-project-list"></div></section>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

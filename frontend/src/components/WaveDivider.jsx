@@ -1,0 +1,3 @@
+export default function WaveDivider({ id = 'wave' }) {
+    return <div className="wave-divider" aria-hidden="true"><svg viewBox="0 0 400 24" preserveAspectRatio="none"><defs><linearGradient id={id} x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#6920c8" stopOpacity="0" /><stop offset="50%" stopColor="#b348c8" stopOpacity=".9" /><stop offset="100%" stopColor="#f08020" stopOpacity="0" /></linearGradient></defs><path d="M0 12 Q25 4 50 12 T100 12 T150 12 T200 12 T250 12 T300 12 T350 12 T400 12" fill="none" stroke={`url(#${id})`} strokeWidth="2" strokeLinecap="round" /></svg></div>;
+}

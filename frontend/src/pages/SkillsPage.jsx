@@ -1,0 +1,5 @@
+import PageHero from '../components/PageHero';
+import WaveDivider from '../components/WaveDivider';
+
+const groups = { Frontend: ['HTML', 'CSS', 'JavaScript', 'React', 'Figma', 'Canva'], Backend: ['Python', 'Node.js', 'MongoDB', 'Firebase'], 'Tools & Workflow': ['VS Code', 'Cursor', 'Kiro', 'Claude', 'ChatGPT', 'ClickUp', 'Slack'] };
+export default function SkillsPage() { return <><PageHero eyebrow="Skills" title="Technologies I work with">From interface design to backend logic and the tools that keep projects moving — here's what I reach for when building.</PageHero><WaveDivider id="skills-wave" /><section className="detail-section" id="skills"><div className="skills-categories">{Object.entries(groups).map(([title, skills]) => <article className="skill-category" key={title}><h3 className="skill-category-title">{title}</h3><div className="skill-pills">{skills.map((skill) => <span className="skill-pill" key={skill}>{skill}</span>)}</div></article>)}</div></section></>; }

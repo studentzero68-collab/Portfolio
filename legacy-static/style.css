@@ -625,6 +625,41 @@ body.portfolio-ready footer         { animation-delay: 0.55s; }
 .project-links {
     display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px;
 }
+.projects-status { width: 100%; color: var(--muted); padding: 24px 0; }
+
+/* ── Owner authentication and project management ───────────────── */
+.auth-page, .admin-page { position: relative; z-index: 2; }
+.auth-panel, .admin-content { max-width: 920px; margin: 80px auto; padding: 0 24px; }
+.auth-panel { max-width: 520px; }
+.auth-panel h1, .admin-content h1 { margin: 0 0 12px; }
+.auth-intro { color: var(--muted); margin-bottom: 28px; }
+.auth-form, .project-form { display: grid; gap: 10px; max-width: 520px; }
+.auth-form label, .project-form label { color: var(--text); font-size: 0.86rem; font-weight: 600; }
+.auth-form input, .project-form input, .project-form textarea {
+    width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: var(--radius-sm);
+    background: var(--card-bg); color: var(--text); font: inherit; margin-bottom: 8px;
+}
+.project-form textarea { resize: vertical; }
+.form-status { min-height: 1.5em; color: var(--accent-highlight); }
+.admin-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 32px; }
+.project-form { max-width: 720px; padding: 24px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--card-bg); margin-bottom: 56px; }
+.checkbox-label { display: flex; align-items: center; gap: 8px; }
+.checkbox-label input { width: auto; margin: 0; }
+.project-form-actions, .admin-row-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.admin-project-list { display: grid; gap: 12px; }
+.admin-project-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 20px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--card-bg); }
+.admin-project-row h3 { margin: 0 0 6px; font-size: 1rem; }
+.admin-project-row p { margin: 0 0 6px; color: var(--muted); }
+.admin-project-row small { color: var(--accent); }
+.image-preview { min-height: 110px; display: grid; place-items: center; padding: 10px; border: 1px dashed var(--border); border-radius: var(--radius-sm); color: var(--muted); margin-bottom: 8px; }
+.image-preview img { max-width: 100%; max-height: 180px; object-fit: contain; border-radius: var(--radius-sm); }
+.admin-project-thumb { width: 72px; height: 48px; object-fit: cover; border-radius: 6px; float: left; margin: 0 14px 8px 0; }
+.project-category { color: var(--accent) !important; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.slide-placeholder { display: grid; place-items: center; width: 100%; height: 100%; color: var(--muted); font-size: 0.85rem; }
+@media (max-width: 640px) {
+    .admin-heading, .admin-project-row { align-items: flex-start; flex-direction: column; }
+    .admin-row-actions { margin-top: 0; }
+}
 
 /* ── Image slider ───────────────────────────────────────────────── */
 .slider {
