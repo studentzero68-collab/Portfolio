@@ -15,3 +15,10 @@ A frontend-only React portfolio for Mukelani Nkazimulo Sindana.
 The Vite development server runs on `http://localhost:5173`.
 
 For production, run `npm run build` followed by `npm --prefix frontend run preview`.
+
+## GitHub Pages
+
+The repository includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml`.
+After pushing to `main`, enable **Settings > Pages > Source: GitHub Actions** in the repository. The site will deploy to:
+
+`https://studentzero68-collab.github.io/Portfolio/`
