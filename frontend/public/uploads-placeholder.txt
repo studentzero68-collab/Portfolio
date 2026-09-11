@@ -1,1 +1,0 @@
-Uploaded project images are served by the backend from /uploads.

@@ -1,8 +1,5 @@
 node_modules/
 frontend/node_modules/
 frontend/dist/
-backend/.env
-backend/portfolio.db*
-backend/sessions.db*
-backend/uploads/*
-!backend/uploads/.gitkeep
+frontend/.env.local
+frontend/.env.*.local

@@ -3,19 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node backend/server.js",
     "dev": "npm --prefix frontend run dev",
-    "build": "npm --prefix frontend run build",
-    "server:dev": "node --watch backend/server.js"
+    "build": "npm --prefix frontend run build"
   },
-  "dependencies": {
-    "better-sqlite3": "^12.4.1",
-    "bcryptjs": "^2.4.3",
-    "connect-sqlite3": "^0.9.15",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "express-session": "^1.18.1",
-    "helmet": "^8.0.0",
-    "multer": "^2.0.2"
-  }
+  "dependencies": {}
 }

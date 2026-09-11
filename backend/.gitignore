@@ -1,7 +1,0 @@
-.env
-portfolio.db*
-sessions.db*
-uploads/*
-!uploads/.gitkeep
-!uploads/.gitkeep
-node_modules/
