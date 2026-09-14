@@ -1,0 +1,40 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c0a14"/>
+      <stop offset="100%" stop-color="#1a0a2e"/>
+    </linearGradient>
+    <linearGradient id="ac3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6920c8"/>
+      <stop offset="100%" stop-color="#f08020"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg3)"/>
+  <rect x="0" y="0" width="1200" height="64" fill="rgba(10,8,20,0.95)"/>
+  <text x="48" y="41" font-family="Georgia,serif" font-size="26" font-style="italic" fill="white" font-weight="700">Zero</text>
+  <rect x="0" y="63" width="1200" height="2" fill="url(#ac3)"/>
+  <!-- Photo grid -->
+  <rect x="48" y="96" width="460" height="380" rx="16" fill="rgba(109,40,180,0.3)" stroke="rgba(139,56,220,0.3)" stroke-width="1"/>
+  <text x="278" y="300" font-family="Arial" font-size="14" fill="rgba(255,255,255,0.5)" text-anchor="middle">Main photo</text>
+  <rect x="520" y="96" width="224" height="185" rx="10" fill="rgba(15,52,96,0.5)" stroke="rgba(139,56,220,0.25)" stroke-width="1"/>
+  <rect x="520" y="291" width="224" height="185" rx="10" fill="rgba(55,20,100,0.4)" stroke="rgba(139,56,220,0.25)" stroke-width="1"/>
+  <rect x="756" y="96" width="224" height="185" rx="10" fill="rgba(20,60,40,0.4)" stroke="rgba(139,56,220,0.25)" stroke-width="1"/>
+  <rect x="756" y="291" width="224" height="185" rx="10" fill="rgba(80,40,20,0.4)" stroke="rgba(139,56,220,0.25)" stroke-width="1"/>
+  <!-- Info column -->
+  <text x="48" y="520" font-family="Arial" font-size="11" fill="white" font-weight="600" letter-spacing="2">TREEHOUSE</text>
+  <text x="48" y="556" font-family="Georgia,serif" font-size="30" font-style="italic" fill="white" font-weight="700">The Canopy Nest</text>
+  <text x="48" y="582" font-family="Arial" font-size="14" fill="#8fd4f8">Knysna Forest, Western Cape</text>
+  <text x="48" y="614" font-family="Arial" font-size="13" fill="#a89ab8">2 guests  ·  1 bedroom  ·  1 bath</text>
+  <!-- Booking card -->
+  <rect x="840" y="496" width="312" height="268" rx="16" fill="rgba(26,20,50,0.95)" stroke="rgba(139,56,220,0.4)" stroke-width="1"/>
+  <text x="996" y="540" font-family="Georgia,serif" font-size="28" font-style="italic" fill="#f08020" text-anchor="middle" font-weight="700">R1,850 / night</text>
+  <rect x="860" y="560" width="272" height="56" rx="10" fill="rgba(139,56,220,0.12)" stroke="rgba(139,56,220,0.3)" stroke-width="1"/>
+  <text x="870" y="584" font-family="Arial" font-size="10" fill="#a89ab8">CHECK IN</text>
+  <text x="870" y="602" font-family="Arial" font-size="13" fill="white">2026-10-10</text>
+  <text x="1000" y="584" font-family="Arial" font-size="10" fill="#a89ab8">CHECK OUT</text>
+  <text x="1000" y="602" font-family="Arial" font-size="13" fill="white">2026-10-17</text>
+  <rect x="860" y="632" width="272" height="46" rx="10" fill="url(#ac3)"/>
+  <text x="996" y="661" font-family="Georgia,serif" font-size="16" font-style="italic" fill="white" text-anchor="middle" font-weight="700">Reserve</text>
+  <text x="996" y="698" font-family="Arial" font-size="11" fill="#a89ab8" text-anchor="middle">You won't be charged yet</text>
+  <text x="600" y="776" font-family="Arial" font-size="12" fill="rgba(160,140,180,0.6)" text-anchor="middle">Zero — Listing detail · 5-photo gallery · Live cost calculator · MongoDB reservations</text>
+</svg>
