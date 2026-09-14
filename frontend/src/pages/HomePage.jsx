@@ -15,7 +15,6 @@ export default function HomePage() {
             <div className="home-hero-visual"><div className="portrait-frame"><img src="/images/mukelani-portrait.png" alt="Mukelani Nkazimulo Sindana" /></div><div className="hero-note"><span>Currently</span><strong>learning in Gauteng, South Africa</strong></div></div>
         </section>
         <section className="intro-strip"><div className="section-kicker">The work behind the work</div><div className="highlight-grid">{highlights.map(([number, title, text]) => <article key={number}><span>{number}</span><h2>{title}</h2><p>{text}</p></article>)}</div></section>
-        <section className="home-cta"><p className="eyebrow">A growing body of work</p><h2>Small steps. Real interfaces. Better questions.</h2><Link to="/projects" className="btn btn-dark">Explore the projects <Icon name="arrow" /></Link></section>
-        <NextPage to="/about" label="About" />
+        <NextPage to="/about" label="About" description="A little more about the person behind the projects." />
     </>;
 }
