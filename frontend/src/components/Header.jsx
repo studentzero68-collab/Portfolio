@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 
-const links = [['/', 'Home'], ['/about', 'About'], ['/projects', 'Projects'], ['/skills', 'Skills'], ['/contact', 'Contact']];
+const links = [['/', 'Home'], ['/about', 'About'], ['/skills', 'Skills'], ['/projects', 'Projects'], ['/contact', 'Contact']];
 
 export default function Header() {
     const location = useLocation();
