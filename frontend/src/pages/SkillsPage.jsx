@@ -11,7 +11,10 @@ const skills = [
     ['MongoDB', 'Working with data modeling in full-stack projects.', 'layers'],
     ['Firebase', 'Connecting authentication and hosted application data.', 'check'],
     ['Figma', 'Thinking through interface structure before building.', 'spark'],
-    ['Git / GitHub', 'Tracking work and sharing projects clearly.', 'github']
+    ['Git / GitHub', 'Tracking work and sharing projects clearly.', 'github'],
+    ['Resilience', 'Recovering quickly, adapting under pressure, and continuing to improve.', 'spark'],
+    ['Integrity', 'Acting honestly, professionally, and with consistency in every task.', 'check'],
+    ['Personal responsibility', 'Taking ownership of my work, learning from mistakes, and delivering reliably.', 'layers']
 ];
 
 export default function SkillsPage() {
