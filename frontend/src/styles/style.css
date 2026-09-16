@@ -99,6 +99,10 @@ h1, h2, h3, h4, h5 { font-family: 'Space Grotesk', sans-serif; line-height: 1.12
 .skill-card > .icon { display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: 26px; border-radius: 12px; background: var(--violet-soft); color: var(--violet); font-size: 0.8rem; }
 .skill-card h2 { margin-bottom: 9px; color: var(--violet-dark); font-size: 1.25rem; }
 .skill-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.5; }
+.learning-section { padding: 0 max(24px, calc((100% - 1180px) / 2)) 86px; background: var(--paper); }
+.learning-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 30px; }
+.learning-heading p { color: var(--muted); margin: 0; font-size: 0.9rem; }
+.learning-card { width: min(100%, 300px); }
 .skills-cta { background: var(--paper-deep); }
 
 .project-intro { padding-bottom: 76px; }
@@ -175,9 +179,10 @@ footer p { margin: 0; }
     .story-section, .story-section.image-first { grid-template-columns: 1fr; gap: 28px; padding: 50px 0; }
     .story-section.image-first .story-copy, .story-section.image-first figure { order: initial; }
     .story-section figure { aspect-ratio: 1.35; }
-    .skills-heading, .showcase-header { display: block; }
-    .skills-heading p, .showcase-header > p { margin-top: 12px; }
+    .skills-heading, .learning-heading, .showcase-header { display: block; }
+    .skills-heading p, .learning-heading p, .showcase-header > p { margin-top: 12px; }
     .projects-showcase, .skills-section { padding-top: 56px; padding-bottom: 56px; }
+    .learning-section { padding-bottom: 56px; }
     .project-card, .project-card.is-expanded { flex-basis: min(330px, calc(100vw - 64px)); width: min(330px, calc(100vw - 64px)); }
     .contact-section { grid-template-columns: 1fr; gap: 55px; padding: 60px 0; }
     footer { width: calc(100% - 32px); align-items: flex-start; flex-direction: column; }
