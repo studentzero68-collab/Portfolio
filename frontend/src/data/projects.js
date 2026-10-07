@@ -6,7 +6,7 @@ const projects = [
         image: '/images/images (3).jpg',
         skills: ['HTML', 'CSS', 'Responsive'],
         tools: [],
-        liveUrl: 'https://studentzero68-collab.github.io/Tesla-project-mukelani/',
+        liveUrl: 'https://bakery-project1-2i0q.onrender.com',
         githubUrl: 'https://github.com/studentzero68-collab/Tesla-project-mukelani',
         featured: false,
         caseStudy: {
